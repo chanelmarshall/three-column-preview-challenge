@@ -1,0 +1,125 @@
+/* General Broad Styling */
+body {
+  margin: 0;
+}
+
+body, button {
+  background-color: hsl(0, 0%, 95%);
+}
+
+h3 {
+  color:  hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 2;
+}
+
+p, button {
+  font-size: 0.8rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  border-radius: 35px;
+  padding: 7% 15%;
+  margin: 50px 0 0;
+}
+
+button:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+/* Flexbox */
+.container {
+  display: flex;
+  width: 60vw;
+  margin: 100px auto 0;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.item {
+  padding: 5%;
+}
+
+/* Sedan Section */
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+
+/* SUVs Section */
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+
+/* Luxury Section */
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* Buttons */
+.btn-sedan {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-sedan:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.btn-suv {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-suv:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn-luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* Footer Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 2%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 500px) {
+  p, button {
+    font-size: 0.9rem;
+  }
+
+  button {
+    margin: 10px 0 0;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .item {
+    padding: 15%;
+  }
+}
